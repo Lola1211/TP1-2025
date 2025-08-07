@@ -118,9 +118,9 @@
         function mostrarResultado(operacaoObj) {
             let resultadoDiv = document.getElementById('resultado');
             if (operacaoObj.operacao === '√') {
-                resultadoDiv.textContent = √${operacaoObj.operando1} = ${operacaoObj.resultado};
+                resultadoDiv.textContent = `√${operacaoObj.operando1} = ${operacaoObj.resultado}`;
             } else {
-                resultadoDiv.textContent = ${operacaoObj.operando1} ${operacaoObj.operacao} ${operacaoObj.operando2} = ${operacaoObj.resultado};
+                resultadoDiv.textContent = `${operacaoObj.operando1} ${operacaoObj.operacao} ${operacaoObj.operando2} = ${operacaoObj.resultado}`;
             }
         }
 
@@ -130,9 +130,9 @@
             historico.forEach((item, index) => {
                 let div = document.createElement('div');
                 if (item.operacao === '√') {
-                    div.textContent = √${item.operando1} = ${item.resultado};
+                    div.textContent = `√${item.operando1} = ${item.resultado}`;
                 } else {
-                    div.textContent = ${item.operando1} ${item.operacao} ${item.operando2} = ${item.resultado};
+                    div.textContent = `${item.operando1} ${item.operacao} ${item.operando2} = ${item.resultado}`;
                 }
                 let btnRemover = document.createElement('button');
                 btnRemover.textContent = 'Remover';
